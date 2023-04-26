@@ -1,0 +1,105 @@
+body {
+    background: url('https://images.unsplash.com/photo-1534996858221-380b92700493?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80') center center fixed no-repeat;
+    background-size: cover;
+}
+
+.weather {
+    width: 330px;
+    height: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('https://images.unsplash.com/photo-1551509134-eb7c5ea9ad2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    background-size: contain;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px;
+}
+
+.search {
+    text-align: center;
+    width: 100%;
+}
+
+.search input {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 0 10px;
+    margin-top: 15px;
+    transition: .5s;
+    background: #4f4f4f;
+    color: #ddd;
+}
+
+.search input::placeholder {
+    color: #ddd;
+}
+
+.search input:focus {
+    border-radius: 10px 0;
+    background: white;
+    color: #000;
+}
+
+
+.search input:focus::-webkit-input-placeholder {
+    color: #000;
+}
+
+
+.name {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.time {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.temperature {
+    width: 200px;
+    text-align: center;
+    margin: 24px auto;
+    background-color: #ffffff1c;
+    border-radius: 20px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.description {
+    text-align: center;
+    color: white;
+}
+
+.desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 15px;
+    background: #00000061;
+}
+
+.himudity,
+.cloud,
+.visibility {
+    text-align: center;
+}
+
+.err {
+    text-align: center;
+    color: red;
+    display: none;
+}
